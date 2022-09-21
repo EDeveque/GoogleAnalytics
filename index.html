@@ -1,0 +1,162 @@
+<!doctype html>
+<html>
+
+	<head>
+		<title>App Clientes</title>
+		<link href="icone.png" rel="icon" />
+		<meta charset="utf-8" />
+		<meta name="viewport" 
+		      content="width=device-width, 
+					   initial-scale=1" />
+		
+		<link href="fontawesome-free-5.15.4-web/css/all.css"
+		      rel="stylesheet" />
+		
+		<link href="bootstrap.min.css" rel="stylesheet" />
+		<script src="jquery-3.6.0.min.js"></script>
+		
+		<link href="style.css" rel="stylesheet" />		
+		<script src="app.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div id="form-cadastro">
+				<div class="form-group">
+					<div class="row">
+						<div class="col-md-3">
+							<label>Código:</label>
+							<input type="text" 
+							       id="ovTXT_Codigo"
+								   class="form-control" />
+						</div>
+						<div class="col-md-9">
+							<label>Descrição:</label>
+							<input type="text" 
+							       id="ovTXT_Descricao"
+								   class="form-control" />
+						</div>
+					</div>
+					  
+				
+				
+					<div class="row">
+						<div class="col-md-9">
+							<label>Marca:</label>
+							<input type="text" 
+							       id="ovTXT_Marca"
+								   class="form-control" />
+						</div>
+						<div class="col-md-3">
+							<label>Unidade de medida:</label>
+							<input type="text" 
+							       id="ovTXT_Unidade_de_medida"
+								   class="form-control" />
+						</div>
+					</div>
+					
+					<div class="row">
+						<div class="col-md-4">
+							<label>Preço de custo:</label>
+							<input type="number" 
+							       id="ovTXT_Preço_de_custo"
+								   class="form-control" />
+						</div>
+						<div class="col-md-4">
+							<label>Percentual de lucro:</label>
+							<input type="number" 
+							       id="ovTXT_Percentual_de_lucro"
+								   class="form-control" />
+						</div>
+						<div class="col-md-4">
+							<label>Preço de venda:</label>
+							<input type="number" 
+							       id="ovTXT_Preço_de_venda"
+								   class="form-control" />
+						</div>
+					</div>
+					
+					
+					<div class="row">
+						<div class="col-md-4">
+							<label>Controlar estoque:</label>
+							<input type="select" 
+							       id="ovTXT_Controlar estoque"
+								   class="form-control" />
+						</div>
+						<div class="col-md-2">
+							<label>Estoque minimo:</label>
+							<input type="number" 
+							       id="ovTXT_Estoque_minimo"
+								   class="form-control" />
+						</div>
+						
+						<div class="col-md-2">
+							<label>Estoque atual:</label>
+							<input type="number" 
+							       id="ovTXT_Estoque_atual"
+								   class="form-control" />
+						</div>
+						
+						<div class="col-md-2">
+							<label>Estoque maximo:</label>
+							<input type="number" 
+							       id="ovTXT_Estoque maximo"
+								   class="form-control" />
+						</div>
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					
+					<div class="row">
+						<div class="col-md-12 pull-right">
+							<button type="button" 
+									id="ovBTN_Cancelar"
+									class="btn btn-xs btn-secondary">Fechar</button>
+							<button type="button"
+									id="ovBTN_Salvar"
+									class="btn btn-xs btn-primary">Salvar</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="form-listagem">
+				<div class="form-group">
+					<div class="row">
+						<div class="col-md-08 pull-right">
+							<button type="button" 
+									id="ovBTN_Adicionar"
+									class="btn btn-primary">
+									<i class="fa fa-cart-plus"></i>
+									Adicionar
+									</button>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<table id="ovTR_Produtos" class="table">
+								<thead>
+									<th>Código</th>
+									<th>Descrição</th>
+									<th>Marca</th>
+									<th>Und medida</th>
+									<th>Preco de custo</th>
+									<th>Preco de venda</th>									
+									<th>Estoque Atual</th>
+									
+								
+								
+								</thead>
+								<tbody></tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
